@@ -1,0 +1,115 @@
+//Luis Anthonie David Minera Pacheco
+//Ing. Electronica
+Plmage photo;
+Plmage photo2;
+Plmage photo3;
+Plmage photo4;
+color c = color(0);
+float x = 0;
+
+float y = 370;
+
+float speed = 5;
+float y2=390;
+
+float x2=10;
+
+float x3=5;
+
+float xCirculo=100;
+float yCirculo=100;
+
+float xLlanta2= 5;
+
+void setup()í
+size(950,450);
+background(100,215,255);
+photo =loadlmage("nube2.png");
+photo2= loadlmage("montaña2.png");
+photo3 =loadlmage("Sol44.png");
+
+photo4 = loadlmage("pajaros.png");
+
+J
+void draw()[
+image(photo, 30, 20);//Imagen de nube
+image(photo2,450,35);//Imagen de montaña
+image(photo3, 630,-50);//Imagen de sol
+
+image(photo4,30,20);//Imagen de pajaros
+
+fi11(175,173,173);
+rect(1,350,949,120);//Carretera
+fill(HF8FC26);
+rect(30,400,60,10);
+rect(150,400,60,10);
+rect(270,400,60,10);
+rect(390,400,60,10);
+rect(510,400,60,10);
+rect(630,400,60,10);
+rect(750,400,60,10);
+rect(870,400,60,10);
+//circle(xLlanta2, 425,25);
+
+move();
+
+display();
+
+/*filI(O, 82,100);
+
+rect(x3,y2,80,20);//lado izquierdo*/
+
+void move()í
+
+x=xX+ speed;
+¡f(x > width) (
+
+x=0;
+
+)
+x2=x + speed;
+if (x2> width)[
+x2=10;
+)
+x3 = x + speed;
+if(x> width)(
+x=100;
+)
+J xCirculo = x + speed;
+if(x> width)(
+x=100;
+y!
+xLlanta2 = x + speed;
+if(x> width)(
+x=5;
+)
+xCirculo = xCirculo + speed;
+if(xCirculo> width)
+xCirculo=5;
+
+)
+
+void display()(
+fill(O, 82,100);
+
+rect(x2,y2,113,30);//lado derecho
+//rect(70,60,90,70);
+
+fil(O, 82,100);
+rect(x3,y2,80,20);//lado izquierdo
+rect(x,y,/*ancho*/90,50);//centro
+//FilI(O, 82,100);
+
+fil(255,255,255);
+rect(x,y,/*ancho*/30,20);//ventana
+
+fill(0,0,0);
+
+//Circulo derecho
+
+circle(xLlanta2, 425,25);
+
+circle(xCirculo, 425, 25);//Circulo Izquierdo
+
+FilI(O, 425,100);
+
